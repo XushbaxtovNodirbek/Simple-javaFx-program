@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.toourapplication.controllers.AddForm">
+    <children>
+        <Label alignment="CENTER" text="Chipta qo'shish" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+            <font>
+                <Font name="System Bold Italic" size="29.0" />
+            </font>
+        </Label>
+        <TextField fx:id="country" layoutX="106.0" layoutY="139.0" promptText="Davlat" style="-fx-border-color: grey; -fx-border-width: 1; -fx-border-style: solid; -fx-border-radius: 5;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </TextField>
+        <DatePicker fx:id="flight_time" layoutX="110.0" layoutY="186.0" promptText="Uchish sanasi" style="-fx-background-color: white; -fx-border-color: grey; -fx-border-radius: 5; -fx-border-width: 1; -fx-border-style: solid;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+        <DatePicker fx:id="landing_time" layoutX="109.0" layoutY="232.0" promptText="Qo'nish sanasi" style="-fx-background-color: white; -fx-border-color: grey; -fx-border-radius: 5; -fx-border-width: 1; -fx-border-style: solid;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+        <TextField fx:id="price" layoutX="106.0" layoutY="273.0" promptText="Bilet narxi " style="-fx-border-color: grey; -fx-border-width: 1; -fx-border-style: solid; -fx-border-radius: 5;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </TextField>
+        <ChoiceBox fx:id="choise_class" layoutX="125.0" layoutY="314.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-radius: 5; -fx-border-width: 1; -fx-border-style: solid; -fx-border-color: grey;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+        <CheckBox fx:id="from_uzb" layoutX="154.0" layoutY="357.0" mnemonicParsing="false" text="O'zbekistonga uchish" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+        <Button layoutX="173.0" layoutY="404.0" mnemonicParsing="false" onAction="#submit" text="Qo'shish" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+        <Label fx:id="validation" layoutX="145.0" layoutY="114.0" textFill="RED" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

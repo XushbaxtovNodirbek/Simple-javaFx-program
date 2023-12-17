@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.toourapplication.controllers.AdminWorkSpaceController">
+    <children>
+        <TabPane layoutX="87.0" layoutY="100.0" minHeight="600.0" minWidth="1000.0" tabClosingPolicy="UNAVAILABLE"
+                 AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                 AnchorPane.topAnchor="0.0">
+            <tabs>
+                <Tab text="Uchib Ketish">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="ticketTable" layoutY="68.0" prefHeight="550.0" prefWidth="1000.0"
+                                           AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="id" maxWidth="50.0" minWidth="50.0" prefWidth="50.0"
+                                                     text="id"/>
+                                        <TableColumn fx:id="country" maxWidth="307.0" minWidth="200.0" prefWidth="200.0"
+                                                     text="Davlat"/>
+                                        <TableColumn fx:id="ticket_type" maxWidth="170.0" minWidth="170.0"
+                                                     prefWidth="170.0" text="Bilet turi"/>
+                                        <TableColumn fx:id="flight_time" maxWidth="176.0" minWidth="200.0"
+                                                     prefWidth="150.0" text="Uchish vaqti"/>
+                                        <TableColumn fx:id="landing_time" minWidth="131.0" prefWidth="200.0"
+                                                     text="Qo'nish vaqti"/>
+                                        <TableColumn fx:id="price" maxWidth="180.0" minWidth="180.0" prefWidth="180.0"
+                                                     text="Bilet narxi"/>
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Qaytish">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="ticketTableUz" layoutY="68.0" prefHeight="570.0" prefWidth="1000.0"
+                                           AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="idUz" maxWidth="50.0" minWidth="50.0" prefWidth="50.0"
+                                                     text="id"/>
+                                        <TableColumn fx:id="countryUz" maxWidth="307.0" minWidth="200.0"
+                                                     prefWidth="200.0" text="Davlat"/>
+                                        <TableColumn fx:id="ticket_typeUz" maxWidth="170.0" minWidth="170.0"
+                                                     prefWidth="170.0" text="Bilet turi"/>
+                                        <TableColumn fx:id="flight_timeUz" maxWidth="176.0" minWidth="200.0"
+                                                     prefWidth="150.0" text="Uchish vaqti"/>
+                                        <TableColumn fx:id="landing_timeUz" minWidth="131.0" prefWidth="200.0"
+                                                     text="Qo'nish vaqti"/>
+                                        <TableColumn fx:id="priceUz" maxWidth="180.0" minWidth="180.0" prefWidth="180.0"
+                                                     text="Bilet narxi"/>
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <Button mnemonicParsing="false" onAction="#add" prefHeight="30.0" prefWidth="153.0"
+                style="-fx-background-color: green;" text="Add" textFill="WHITE" AnchorPane.rightAnchor="158.0"
+                AnchorPane.topAnchor="0.0">
+            <font>
+                <Font name="System Bold" size="14.0"/>
+            </font>
+        </Button>
+        <Button layoutX="210.0" mnemonicParsing="false" onAction="#refresh" prefHeight="30.0" prefWidth="153.0"
+                style="-fx-background-color: blue;" text="Refresh" textFill="WHITE" AnchorPane.rightAnchor="0.0"
+                AnchorPane.topAnchor="0.0">
+            <font>
+                <Font name="System Bold Italic" size="14.0"/>
+            </font>
+        </Button>
+        <Button layoutX="633.0" mnemonicParsing="false" onAction="#remove" prefHeight="30.0" prefWidth="153.0"
+                style="-fx-background-color: red;" text="Remove" textFill="WHITE" AnchorPane.rightAnchor="316.0"
+                AnchorPane.topAnchor="0.0">
+            <font>
+                <Font name="System Bold" size="14.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
